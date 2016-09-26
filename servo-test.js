@@ -38,12 +38,12 @@ board.on("ready", function() {
 			console.log("stopping");
 			left_wheel.stop();
 			right_wheel.stop();
-		}, {
-			delay: 1500,
-			task: function() {
-				console.log("Test complete. Exiting");
-				process.exit();
-			}
+		}
+	}, {
+		delay: 1500,
+		task: function() {
+			console.log("Test complete. Exiting")
+			process.exit();
 		}
 	}
 	]);
